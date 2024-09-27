@@ -59,7 +59,7 @@ body {
     background-color: white;
 }
 
-mer {
+#mer {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
