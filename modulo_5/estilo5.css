@@ -14,6 +14,13 @@ a {
     color: aquamarine;
 }
 
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 8px;
+}
+
 
 .container {
     background-color: #112240;
