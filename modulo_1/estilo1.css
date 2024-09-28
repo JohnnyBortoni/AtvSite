@@ -12,6 +12,17 @@ h1{
     padding-bottom: 8px;
 }
 
+a {
+    text-align: center;
+    color: rgb(77, 65, 235);
+    text-decoration: none;
+}
+
+ a:hover {
+    color: aquamarine;
+}
+
+
 main {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -31,16 +42,6 @@ img {
 }
 
 
-#links {
-    text-align: center;
-    color: rgb(77, 65, 235);
-    text-decoration: none;
-}
-
-#links > a:hover {
-    color: aquamarine;
-}
-
 .container {
     background-color: #112240;
     border-radius: 10px;
@@ -51,6 +52,7 @@ img {
     text-align: center;
     position: relative;
 }
+
 .container h1 {
     font-size: 18px;
     margin-bottom: 20px;
@@ -93,8 +95,20 @@ img {
     content: '';
     position: absolute;
     left: 5px;
-    top: 13px;
-    bottom: 20px;
+    top: 14px;
+    bottom: 166px;
+    width: 2px;
+    background-color: white;
+}            
+     
+.steps li:nth-child(1)::after,
+.steps li:nth-child(2)::after
+ {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    bottom: -150px;
     width: 2px;
     background-color: white;
 }
