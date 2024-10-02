@@ -4,7 +4,7 @@
 
 body {
     background-color: rgb(198, 207, 217);
-    text-align: left;
+
 }
 
 a {
@@ -99,10 +99,7 @@ h1{
     padding-bottom: 8px;
 }
 
-#corpo {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+#corpo {    
     align-items: left;
     padding: 15px;
 }
@@ -110,5 +107,5 @@ h1{
 img {
     height: 400px;
     width: 400px;
-    align-self: right;
+
 }
