@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body {
     background-color: rgb(184, 212, 242);
 }
@@ -65,7 +63,7 @@ a {
     background-color: white;
     border-radius: 50%;
     border: 2px solid #0A192F;
-   
+
 }
 
 .steps li:nth-child(1)::before {
@@ -81,8 +79,8 @@ a {
     bottom: 165px;
     width: 2px;
     background-color: white;
-}            
-     
+}
+
 .steps li:nth-child(1)::after,
 .steps li:nth-child(2)::after
  {
