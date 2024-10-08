@@ -1,5 +1,5 @@
 document.addEventListener("scroll", function () {
-    const sections = document.querySelectorAll("haid]"); // Seções do conteúdo
+    const sections = document.querySelectorAll("haid"); // Seções do conteúdo
     const menuItems = document.querySelectorAll(".steps li"); // Itens de navegação
 
     // Função para alterar a cor dos círculos
