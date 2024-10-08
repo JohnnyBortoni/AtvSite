@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: left;
+    /* !! */
+    width: 100%;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+header h2 {
+    font-size: 42px;
+    color: rgb(80, 80, 80);
+    padding: 2%;
+}
+
+div.progresso {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+div.scroll-progresso {
+    width: 0;
+    height: 10px;
+    background-color: dodgerblue;
+}
+
+section {
+    width: 100%;
+    margin-top: calc(100px + 4%);
+}
+
+section p {
+    font-size: 22px;
+    color: rgb(80, 80, 80);
+    width: 100%;
+    padding: 2%;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 42px;
+}
