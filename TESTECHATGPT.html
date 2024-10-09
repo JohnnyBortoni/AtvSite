@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Progressão</title>
+</head>
+<body>
+
+    <progress id="barraProgresso" value="0" max="100"></progress>
+    <br><br>
+    <button onclick="aumentarProgresso()">Aumentar Progressão</button>
+
+    <!-- Módulo 0 -->
+
+    <h1> MODELO ENTIDADE RELACIONAMENTO </h1>
+
+    <div class="container">
+        <h3>MER </h3>
+        <ul class="steps">
+
+            <li><a href="#oqMer">Módulo 0</a></li>
+
+            <li><a href="#qspComp">Módulo 1</a></li>
+
+            <li><a href="#qsAplic">Módulo 2</a></li>
+
+            <li><a href="#fupMER">Módulo 3</a></li>
+
+            <li><a href="#edMer">Módulo 4</a></li>
+
+            <li><a href="#bemal">Módulo 5</a></li>
+
+        </ul>
+    </div>
+
+    <p>
+    <nav>
+
+
+        <h2><a name="oqMer" id="link_vert">O que é MER</a></h2>
+        <ul id="mer">
+
+    </nav>
+
+    
+        O Modelo Entidade Relacionamento (também chamado Modelo ER, ou simplesmente MER), como o nome sugere, é um
+        modelo conceitual utilizado na Engenharia de Software para descrever os objetos (entidades) envolvidos em um
+        domínio de negócios, com suas características (atributos) e como elas se relacionam entre si (relacionamentos).
+        Em geral, este modelo representa de forma abstrata a estrutura que possuirá o banco de dados da aplicação.
+        Obviamente, o banco de dados poderá conter várias outras entidades, tais como chaves e tabelas intermediárias,
+        que podem só fazer sentido no contexto de bases de dados relacionais.<br><BR>
+
+            <strong><h2> Conceito e Origem do MER</h2></strong>
+            <p> MER foi criado em 1976 por Peter Chen, com o objetivo de representar de maneira simples e intuitiva o esquema
+                conceitual de um banco de dados.
+                Chen introduziu o MER para superar as limitações dos modelos existentes à época, como o modelo hierárquico e o
+                modelo de rede, que eram mais complicados e
+                menos flexíveis na representação de dados.<br>
+                A principal contribuição do MER foi permitir que os desenvolvedores modelassem os dados em termos das entidades
+                do mundo real, suas propriedades (atributos) e seus relacionamentos, promovendo um maior alinhamento entre os
+                conceitos do sistema e os dados que precisariam ser armazenados e manipulados.
+            </p>
+
+    </p> <br>
+
+
+
+
+    <!-- Fim do móudlo 0
+
+    - Módulo 1 -->
+
+    <h2><a name="qspComp" id="link_vert"></a>Quais são seus principais Componentes?</h2>
+
+    <main>
+        <section>
+            <article>
+
+                <p>
+                <h2><strong>Entidades:</strong></h2> Representam objetos ou conceitos do mundo real que têm uma
+                existência
+                independente. Cada entidade possui atributos, que são características ou propriedades (por exemplo,
+                um "Cliente" pode ter atributos como Nome, Endereço e Telefone).<br><br>
+
+                <h3>Tipos de Entidades</h3>
+
+                <p>
+
+                    <strong> Fortes (ou Entidades Independentes):</strong> São entidades que existem independentemente
+                    de outras
+                    entidades. Por exemplo, um "Cliente" existe independentemente de outras entidades.<br>
+
+                    <strong>Entidades Fracas (ou Entidades Dependentes):</strong> São entidades que dependem de outra
+                    entidade para
+                    existir. Elas geralmente não têm uma chave primária própria e precisam de uma entidade forte para
+                    formar sua identidade. Por exemplo, uma "Dependente" (como um dependente de um funcionário em uma
+                    empresa) é uma entidade fraca, pois depende da existência da entidade "Funcionário".<br><br>
+                </p>
+                </p>
+
+
+
+            </article>
+
+            <article>
+
+                <p>
+                <h2><strong>Atributos:</strong></h2> São as propriedades que descrevem uma entidade. Podem ser simples
+                (um
+                único valor), compostos (vários valores) ou deriváveis (calculados a partir de outros
+                atributos).<br><br>
+
+                <h3>Tipos de Atributos </h3>
+
+                <p>
+
+                    <strong> Atributos Simples:</strong> São atributos que não podem ser divididos em subcomponentes.
+                    Exemplo: "Nome" de
+                    um cliente.<br>
+                    <strong>Atributos Compostos:</strong> Podem ser subdivididos em componentes menores. Exemplo:
+                    "Endereço", que pode
+                    ser dividido em "Rua", "Cidade", "Estado" e "CEP".<br>
+                    <strong> Atributos Derivados:</strong> São atributos cujo valor pode ser calculado a partir de
+                    outros atributos.
+                    Exemplo: "Idade", que pode ser derivada da "Data de Nascimento".
+                    Atributos Multivalorados: Podem ter mais de um valor para uma única instância da entidade. Exemplo:
+                    "Telefone" em uma entidade "Cliente", onde um cliente pode ter vários números de telefone.<br><br>
+                </p>
+                </p>
+
+            </article>
+
+            <article>
+
+                <p>
+                <h2><strong>Relações</strong></h2>: Representam como as entidades se conectam umas às outras. Por
+                exemplo, um
+                "Cliente" pode estar associado a uma "Compra". As relações podem ter cardinalidades, que definem o
+                número de instâncias de uma entidade que podem estar associadas a outra (por exemplo, um cliente
+                pode fazer várias compras).
+                </p>
+
+            </article>
+
+            <article>
+
+                <p>
+                <h2><strong>Cardinalidade</strong></h2>: Refere-se à quantidade de instâncias que podem se relacionar.
+                As
+                cardinalidades comuns incluem:
+
+                <br> <br>
+
+                <img src="cardinalidade.png" alt="cardinalidade">
+
+                </p>
+
+                <p class="card">
+
+                    <strong>Um-para-Um (1:1)</strong>: Os relacionamentos 1:1 garantem que cada instância de entidade
+                    tenha no máximo uma associação correspondente.
+
+                    <br><br>
+
+                    <strong>Um-para-Muitos (1:N)</strong>: Um relacionamento 1:N significa que cada instância de uma
+                    entidade se relaciona com muitas instâncias de outra entidade.
+
+                    <br><br>
+
+                    <strong>Muitos-para-Muitos (N:N)</strong>: Um relacionamento N:N significa que muitas instâncias de
+                    ambas as entidades se relacionam umas com as outras.
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <p>
+                <h2><strong>Diagrama ER</strong></h2> A representação gráfica do modelo, onde as entidades são
+                representadas
+                por retângulos, os atributos por elipses e as relações por losangos.<br><br>
+
+                <h3><strong>Componentes Visuais do DER</strong></h3>
+                <p>
+
+                    <strong> Retângulos:</strong> Representam as entidades.<br>
+                    <strong> Elipses:</strong> Representam os atributos.<br>
+                    <strong>Losangos:</strong> Representam os relacionamentos.<br>
+                    <strong> Linhas:</strong> Conectam entidades a seus atributos e a relacionamentos.<br>
+                    <strong> Cardinalidade:</strong> Representada por números ou símbolos próximos às linhas que
+                    conectam entidades e
+                    relacionamentos, indicando as regras de cardinalidade.
+
+                </p>
+
+                <h3><strong>Exemploss praticos do DER</strong></h3>
+                <p>
+                    <strong>
+                        <h5>Suponha que estamos modelando um sistema de loja online com as seguintes entidades e
+                            relacionamentos:</h5>
+                    </strong>
+
+                    <strong>Cliente:</strong> Entidade com atributos como "ID", "Nome" e "Email".<br>
+                    <strong>Pedido:</strong> com atributos como "ID_Pedido", "Data" e "Valor Total".<br>
+                    <strong>Produto:</strong> Entidade com atributos como "ID_Produto", "Nome" e "Preço".
+                    Relacionamentos:<br><br>
+
+                    Um cliente pode fazer vários pedidos (1).<br>
+                    Um pedido contém vários produtos (N).<br>
+                    No diagrama, teríamos um retângulo para cada entidade, elipses para os atributos, losangos para os
+                    relacionamentos "Faz" e "Contém", e linhas conectando esses elementos, com a cardinalidade expressa
+                    junto às conexões.<br><br>
+
+
+
+                </p>
+
+
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!--  Fim do módulo 1
+
+     - Módulo 2 -->
+
+    <h2> <a name="qsAplic" id="link_vert">Quais são as suas aplicações?</a></h2>
+
+    <ul id="corpo">
+
+        <li>
+
+            <h3>
+                <p>
+                    Desenvolvimento de bancos de dados:
+                </p>
+            </h3>
+
+            <p> A partir do MER, é possível projetar a estrutura do banco de dados, definindo as tabelas, os campos e as
+                chaves primárias e estrangeiras.</p><br>
+
+            <h3>
+                <p> Chaves Primárias e Estrangeiras:</p>
+            </h3>
+
+            <p>
+                <strong>Chave Primária:</strong> Um atributo (ou conjunto de atributos) que identifica univocamente uma
+                instância de uma
+                entidade. Por exemplo, "ID_Cliente" é a chave primária da entidade "Cliente".<>
+                    <>
+                        <strong> Chave Estrangeira:</strong> Um atributo em uma entidade que faz referência à chave
+                        primária de outra entidade,
+                        estabelecendo um relacionamento entre as duas. Exemplo: "ID_Cliente" na entidade "Pedido" seria
+                        uma
+                        chave estrangeira que se refere ao cliente que fez o pedido.
+            </p> <br>
+
+            <h3>
+                <p> Documentação:</p>
+            </h3>
+
+            <p>
+                O MER serve como uma documentação visual do banco de dados, facilitando a manutenção e as futuras
+                alterações
+            </p> <br>
+
+            <h3>
+                <p>
+                    Representação visual:
+                </p>
+            </h3>
+
+            <p> O MER utiliza diagramas para representar as entidades (pessoas, objetos, conceitos) e os
+                relacionamentos entre elas. Essa representação gráfica facilita a compreensão da estrutura dos dados
+                e a comunicação entre os membros da equipe.
+            </p> <br>
+
+            <h3>
+                <p>
+                    Análise de requisitos:
+                </p>
+            </h3>
+
+            <p>
+                O MER auxilia na análise e definição dos requisitos de um sistema, permitindo identificar as informações
+                relevantes e as relações entre elas.
+            </p> <br>
+
+            <h3>
+                <p>
+                    Comunicação:
+                </p>
+            </h3>
+
+            <p>
+                O MER é uma linguagem comum que permite comunicar a estrutura dos dados de forma clara e concisa entre
+                os diversos envolvidos no projeto, como analistas de sistemas, desenvolvedores e usuários finais.
+            </p> <br>
+
+
+        </li>
+
+        <li>
+            <h3>
+                <p>
+                    Exemplo:
+                </p>
+            </h3>
+
+            <p>
+                Um exemplo simples de um diagrama para um sistema de imobiliárias.
+            </p> <br>
+            <img src="imagem.jpg" alt="imagem">
+
+
+        </li>
+
+
+    </ul>
+
+    <!-- Fim do módulo 2
+
+    - Módulo 3 -->
+
+    <h2> <a name="fupMER" id="link_vert">Ferramentas utilizadas pelo MER</a></h2>
+
+
+
+
+
+    <nav>
+
+        <ul id="corpo">
+
+            <li>
+
+                <h3>
+                    Lucidhart
+                </h3>
+                <p>
+                    Uma ferramenta online que permite criar diagramas ER de forma colaborativa.
+                </p><br>
+
+                <h3>
+                    <p>
+                        Draw.io
+                    </p>
+                </h3>
+
+                <p>
+                    Uma ferramenta gratuita e versátil para desenhar diagramas, incluindo modelos ER.
+                </p> <br>
+
+                <h3>
+                    <p>
+                        Mysql Workbench
+                    </p>
+                </h3>
+
+                <p>
+                    Oferece recursos para modelagem de dados incluindo a criação de diagramas ER que podem ser usados
+                    para gerar código SQL.
+                </p> <br>
+
+                <h3>
+                    <p>
+                        Microsoft Visio
+                    </p>
+                </h3>
+
+                <p>
+                    Uma ferramenta poderosa de diagramação que possui tmeplates para diagramas ER.
+                </p> <br>
+
+                <h3>
+                    <p>
+                        ER/Studio
+                    </p>
+                </h3>
+
+                <p>
+                    Um software especializado em modelagem de dados, muito em ambientes corporativos.
+                </p> <br>
+
+                <h3>
+                    <p>
+                        Oracle SQL Developer Data Modeler
+                    </p>
+                </h3>
+
+                <p>
+                    Ferramenta da Oracle que permite modelagem visual e criação de diagramas ER.
+                </p> <br>
+
+                <h3>
+                    <p>
+                        DbSchema
+                    </p>
+                </h3>
+
+                <p>
+                    Uma ferramenta para design de bancos de dados que inclui suporte para modelos ER e visualização de
+                    dados.
+                </p> <br>
+
+                <h3>
+                    <p>
+                        Toad Data Modeler
+                    </p>
+                </h3>
+
+                <p>
+                    Usada para modelagem de dados e criação de diagramas ER, com suporte para várias plataformas de
+                    banco de dados.
+                </p> <br>
+
+                <p>
+                    Essas ferramentas variam em termos de recursos, facilidade de uso e integração com banco de dados,
+                    então a escolha depende das necessidades específicas do projeto.
+                </p>
+
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Fim do módulo 3
+
+    - Módulo 4 -->
+
+    <nav>
+
+        <h2> <a name="edMer" id="link_vert">Exemplos de MER</a> </h2>
+
+
+        <ul id="corpo">
+
+            <li>
+
+
+                <p> Vamos apresentar, por meio do diagrama entidade realcionamento, as entidades "Médico" e
+                    "Paciente", com alguns de seus possíveis atributos, bem como o relacionamento
+                    "Atendimento" entre elas.
+                </p> <br>
+
+                <img src="Captura de tela 2024-09-26 223318.png">
+
+                <h3>
+                    <p>
+                        O que podemos enterder do diagrama entidade relacionamento da imagem acima?
+                    </p>
+                </h3>
+
+                <p> Bom, ele está ilustrando o atendimento de pacientes por médicos, sendo que o
+                    relacionamento "atendimento" é realizado em uma determinada data (atributo), por um
+                    médico (entidade), o qual possui um nome e um código CRM (que é um número único a todos
+                    os médicos), em pacientes (entidades), os quais possuem CPF, único a cada um, nome,
+                    telefone, (multivalorado, pois pode haver mais de um valor) e um endereço, composto por
+                    rua, número e bairro.
+                </p> <br>
+
+            </li>
+        </ul>
+    </nav>
+
+    <!--  Fim do módulo 4
+
+    - Módulo 5 -->
+
+    <h2> <a name="bemal" id="link_vert">Benefícios e Malefícios</a> </h2>
+
+    <nav>
+
+        <ul id="corpo">
+
+            <li>
+
+                <p> O Modelo Entidade-Relacionamento (MER) é uma técnica fundamental na
+                    modelagem de dados. aqui estão
+                    os principais benefícios e malefícios: </p><br>
+
+                <h2> Benefícios </h2>
+
+                <br>
+
+                <h4> 1. Clareza visual </h4>
+                <p>
+                    O MER utiliza diagramas que mostram entidades, atributos e relacionamentos,
+                    tornando a estrutura de
+                    dados fácil de entender. Isso é crucial para a equipe de desenvolvimento e
+                    outras partes
+                    interessadas.
+                </p>
+
+                <br>
+
+                <h4> 2. Comunicação erficaz </h4>
+                <p>
+                    Um diagrama MER serve como uma linguagem comum entre desenvolvedores,
+                    analistas de negócios e outras
+                    partes envolvidas no projeto, reduzindo mal-entendidos sobre como os dados
+                    interagem.
+                </p>
+
+                <br>
+
+                <h4> 3. Estrutura lógica </h4>
+                <p>
+                    O modelo organiza dados em entidades e relacionamentos de maneira lógica,
+                    facilitando a compreensão
+                    da estrutura do banco de dados e de como os dados se relacionam entre si.
+                </p>
+
+                <br>
+
+                <h4> 4. Facilidade de alteração </h4>
+                <p>
+                    Quando os requisitos de um sistema mudam, o MER pode ser facilmente ajustado
+                    para refletir essas
+                    mudanças. Isso é essencial em ambientes de desenvolvimento ágeis.
+                </p>
+
+                <br>
+
+                <h4> 5. Base para normalização </h4>
+                <p>
+                    O MER auxilia na identificação de redundâncias e inconsistências, permitindo
+                    a aplicação de regras
+                    de normalização que melhoram a integridade e eficiência do banco de dados.
+                </p>
+
+                <br>
+
+                <h4> 6. Documentação </h4>
+                <p>
+                    A documentação visual criada por meio do MER é um recurso valioso para novos
+                    membros da equipe,
+                    auditorias e futuras manutenções, garantindo que a estrutura de dados seja
+                    compreendida ao longo do
+                    tempo.
+                </p>
+
+                <br>
+
+                <h4> 7. Análise de requisitos </h4>
+                <p>
+                    Durante a fase de levantamento de requisitos, o MER ajuda a identificar e
+                    definir claramente as
+                    necessidades do sistema, servindo como um guia para o desenvolvimento
+                    subsequente.
+                </p>
+
+                <br><br><br>
+
+                <h2> Malefícios </h2>
+
+                <br>
+
+                <h4> 1. Complexidade em grandes sistemas </h4>
+                <p>
+                    Em sistemas com muitas entidades e relacionamentos, o MER pode se tornar
+                    excessivamente complexo,
+                    dificultando a visualização e compreensão do modelo.
+                </p>
+
+                <br>
+
+                <h4> 2. Desempenho </h4>
+                <p>
+                    Um modelo detalhado pode levar a consultas mais lentas, especialmente se
+                    muitas tabelas e
+                    relacionamentos forem envolvidos em uma única operação. Isso pode exigir
+                    otimizações adicionais.
+                </p>
+
+                <br>
+
+                <h4> 3. Ambiguidade </h4>
+                <p>
+                    Se as entidades e relacionamentos não forem definidos com precisão, pode
+                    haver confusão sobre o que
+                    cada elemento representa, levando a interpretações diferentes por membros da
+                    equipe.
+                </p>
+
+                <br>
+
+                <h4> 4. Dificuldade de implementação </h4>
+                <p>
+                    A transição do modelo conceitual para um modelo físico requer um
+                    entendimento profundo do sistema de
+                    banco de dados escolhido, o que pode ser desafiador e exigir habilidades
+                    específicas.
+                </p>
+
+                <br>
+
+                <h4> 5. Manutenção </h4>
+                <p>
+                    Alterações frequentes no MER, como a adição de novas entidades ou a
+                    modificação de relacionamentos,
+                    podem criar uma carga de trabalho significativa para a equipe de manutenção,
+                    além de potencialmente
+                    introduzir erros.
+                </p>
+
+                <br>
+
+                <h4> 6. Falta de padrões </h4>
+                <p>
+                    Em ambientes onde não existem diretrizes ou padrões claros para a criação de
+                    MERs, a qualidade e a
+                    consistência dos modelos podem variar, o que pode dificultar a integração
+                    entre sistemas.
+                </p>
+
+                <br>
+
+                <h4> 7. Dependência de ferramentas </h4>
+                <p>
+                    Muitas vezes, o MER requer software especializado para criar e editar os
+                    diagramas. Isso pode
+                    limitar o acesso e a capacidade de colaboração, especialmente em equipes
+                    menores ou menos
+                    experientes.
+                </p>
+
+                <br>
+
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        function aumentarProgresso() {
+            var barra = document.getElementById("barraProgresso");
+            if (barra.value < 100) {
+                barra.value += 10; // Aumenta a progressão em 10%
+            }
+        }
+    </script>
+
+</body>
+</html>

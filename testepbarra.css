@@ -5,18 +5,31 @@
     font-family: "Arial";
 }
 
-header {
-    position: fixed;
-    top: 0;
-    display: grid;
-    place-items: left;
-    /* !! */
-    width: 100%;
-    background-color: white;
+body {
+    background-color: color-mix(in srgb, #4A6DE5, #4e75ec 10%); /*rgb(30, 138, 253)) Azul bnt*/
+}
+
+p{
+    padding-right: 50;
+    color: black;
+}
+
+nav{
+    text-align: center;
 }
 
 h2{
     text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: left; /* !! */
+    width: 100%;
+    height: 12%;
+    background-color: white;
 }
 
 header h2 {
@@ -34,7 +47,7 @@ div.progresso {
 div.scroll-progresso {
     width: 0;
     height: 10px;
-    background-color: dodgerblue;
+    background-color: rgb(127, 157, 187);
 }
 
 section {
@@ -50,4 +63,137 @@ section p {
     max-width: 600px;
     margin: 0 auto;
     line-height: 42px;
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 8px;
+}
+
+#link_vert {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a {
+    text-align: center;
+    color: rgb(58, 135, 216);
+    text-decoration: none;
+}
+
+ a:hover {
+    color: rgb(194, 236, 222);
+}
+
+
+
+.container {
+    background-color: #0d367c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: fixed; /* Para manter o container fixo na tela */
+    right: 50px; /* Alinha o container à direita da tela */
+    top: 200px; /* Define a distância do topo da tela */
+    z-index: 1000; /* Garante que ele fique sobre outros elementos da página */
+}
+
+.container h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.steps li {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.steps li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--circle-color, white); /* Variável que o JS vai alterar */
+    border-radius: 50%;
+    border: 2px solid #0A192F;
+}
+
+.steps li:nth-child(1)::before {
+    background-color: rgb(6, 92, 184);
+}
+
+.steps li::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    width: 2px;
+    background-color: white;
+}
+
+/* Para o primeiro item */
+.steps li:nth-child(1)::after {
+    top: 16px; /* Define o início da linha depois da bolinha */
+    bottom:-22px; /* Quebra antes da segunda bolinha */
+}
+
+/* Para o segundo item */
+.steps li:nth-child(2)::after {
+    top: 16px; 
+    bottom: -22px; /* Fim antes da terceira bolinha */
+}
+
+/* Para o terceiro item */
+.steps li:nth-child(3)::after {
+    top: 16px; 
+    bottom: -22px; /* Fim antes da quarta bolinha */
+}
+
+/* Para o quarto item */
+.steps li:nth-child(4)::after {
+    top: 16px; 
+    bottom: -22px; /* Fim antes da quinta bolinha */
+}
+
+/* Para o quinto item, sem linha após a última bolinha */
+.steps li:nth-child(5)::after {
+    top: 16px; 
+    bottom: -22px; /* Fim logo abaixo da bolinha */
+
+}
+
+#mer {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    align-self: center;
+}
+
+h4{
+    text-align: center;
 }
