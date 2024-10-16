@@ -65,10 +65,25 @@ section p {
     display: grid;
     place-items: left; /* !! */
     width: 100%;
-    height: 20%;
-    background-color: white;
+    height: 12%;
+    background-color: rgb(136, 175, 243);
     
 }
+
+
+.steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.steps li {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
 
 header h2 {
     font-size: 42px;
@@ -78,14 +93,14 @@ header h2 {
 
 div.progresso {
     width: 100%;
-    height: 10px;
-    background-color: rgb(240, 240, 240);
+    height: 50%;
+    background-color: rgb(86, 128, 221);
 }
 
 div.scroll-progresso {
     width: 0;
-    height: 10px;
-    background-color: rgb(127, 157, 187);
+    height: 100px;
+    background-color: rgb(73, 144, 47);
 }
 
 
@@ -109,7 +124,7 @@ a {
     border-radius: 10px;
     padding: 10px;
     width: 150px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     text-align: center;
     position: fixed; /* Para manter o container fixo na tela */
@@ -118,50 +133,31 @@ a {
     z-index: 1000; /* Garante que ele fique sobre outros elementos da página */
 }
 
+.barra_progre {
+    width: 10%;
+    background-color: rgb(73, 144, 47); 
+    position: absolute;
+    top: 0;
+}
+
+.conteudo {
+    padding: 20px;
+    max-width: 600px;
+}
+
 .container h3 {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.steps {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
-.steps li {
-    margin: 20px 0;
-    position: relative;
-    padding-left: 30px;
-}
-
-.steps li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: var(--circle-color, white); /* Variável que o JS vai alterar */
-    border-radius: 50%;
-    border: 2px solid #0A192F;
-}
 
 .steps li:nth-child(1)::before {
     background-color: rgb(6, 92, 184);
 }
 
-.steps li::after {
-    content: '';
-    position: absolute;
-    left: 5px;
-    width: 2px;
-    background-color: white;
-}
 
-/* Para o primeiro item */
+
+/* BARRINHA DE PROGRESSÃO DAQUI PARA BAIXO */
 .steps li:nth-child(1)::after {
     top: 16px; /* Define o início da linha depois da bolinha */
     bottom:-22px; /* Quebra antes da segunda bolinha */
@@ -191,6 +187,12 @@ a {
     bottom: -22px; /* Fim logo abaixo da bolinha */
 
 }
+.steps li:nth-child(6)::after {
+    top: 16px; 
+    bottom: -22px; /* Fim logo abaixo da bolinha */
+
+}
+/* FIM DA BARRINHA DE PROGRESSÃO */
 
 #mer {
     display: flex;
