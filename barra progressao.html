@@ -59,7 +59,7 @@
     </nav>
 
 
-    <p>
+    <p class="fontEscritura">
         O Modelo Entidade Relacionamento (também chamado Modelo ER, ou simplesmente MER), como o nome sugere, é um
         modelo conceitual utilizado na Engenharia de Software para descrever os objetos (entidades) envolvidos em um
         domínio de negócios, com suas características (atributos) e como elas se relacionam entre si
@@ -70,13 +70,13 @@
         que podem só fazer sentido no contexto de bases de dados relacionais.
     </p>
 
-    <br><BR>
+    <br>
 
     <strong>
-        <h2> Conceito e Origem do MER:</h2>
-    </strong>
+        <h3 class="subb"> Conceito e Origem do MER:</h3>
+    </strong> <br>
 
-    <p> MER foi criado em 1976 por Peter Chen, com o objetivo de representar de maneira simples e intuitiva o
+    <p class="fontEscritura"> MER foi criado em 1976 por Peter Chen, com o objetivo de representar de maneira simples e intuitiva o
         esquema
         conceitual de um banco de dados.
         Chen introduziu o MER para superar as limitações dos modelos existentes à época, como o modelo hierárquico e
@@ -94,16 +94,20 @@
 
     - Módulo 1 -->
 
-    <br><br><br><br>
+ <br><br>
 
-    <h1><a name="qspComp" id="link_vert"></a>PRINCIPAIS COMPONENTES DO MER</h1> <br>  
-    <p>Seus principais componentes são:
-        - Entidades; <br>
-        - Atributos; <br>
-        - Relações; <br>
-        -Cardialidade; <br>
-        -Diagrama ER. <br>
-        Continuando, iremos apresentar com mais detalhes sobre cada tópico sobre os principais componentes do MER.
+    <h1 id="prinComM"><a name="qspComp" id="link_vert">PRINCIPAIS COMPONENTES DO MER</a></h1> <br>  
+    <p class="fontEscritura">Seus principais componentes são:
+        <ul id="comp">
+                <strong>
+                    <li> Entidades <br></li>
+                    <li> Atributos <br></li>
+                    <li> Relações <br></li>
+                    <li>Cardialidade <br></li>
+                    <li>Diagrama ER <br></li>
+                </strong>
+        </ul> <br>
+        <p class="fontEscritura">Continuando, iremos apresentar com mais detalhes sobre cada tópico sobre os principais componentes do MER.</p>
 
     </p>
 
@@ -117,7 +121,7 @@
 
             <br>
 
-            <p>Representam objetos ou conceitos do mundo real que têm uma
+            <p class="fontEscritura">Representam objetos ou conceitos do mundo real que têm uma
                 existência
                 independente. Cada entidade possui atributos, que são características ou propriedades (por
                 exemplo,
@@ -130,7 +134,7 @@
 
             <br>
 
-            <p>
+            <p class="fontEscritura">
 
                 <strong> Fortes (ou Entidades Independentes):</strong> São entidades que existem
                 independentemente
@@ -161,7 +165,7 @@
 
             <br>
 
-            <p>
+            <p class="fontEscritura">
                 São as propriedades que descrevem uma entidade. Podem ser
                 simples
                 (um
@@ -175,7 +179,7 @@
 
             <br>
 
-            <p>
+            <p class="fontEscritura">
 
                 <strong> Atributos Simples:</strong> São atributos que não podem ser divididos em
                 subcomponentes.
@@ -205,7 +209,7 @@
 
             <br><br>
 
-            <p> Representam como as entidades se conectam umas às outras. Por
+            <p class="fontEscritura"> Representam como as entidades se conectam umas às outras. Por
                 exemplo, um
                 "Cliente" pode estar associado a uma "Compra". As relações podem ter cardinalidades, que definem
                 o
@@ -224,20 +228,22 @@
 
             <br>
 
-            <p>Refere-se à quantidade de instâncias que podem se
+            <p class="fontEscritura">Refere-se à quantidade de instâncias que podem se
                 relacionar.
                 As
                 cardinalidades comuns incluem:
             </p>
             <br> <br>
 
-            <img src="cardinalidade.png" alt="cardinalidade">
+            <h2>Um Para Um(1:1)</h2>
+            <h2>Um  Para Muitos(1:N)</h2> 
+            <h2>Muitos Para Muitos (N:N)</h2>
 
             <br><br><br>
 
             </p>
 
-            <p class="card">
+            <p class="fontEscritura" class="card">
 
                 <strong>Um-para-Um (1:1):</strong> Os relacionamentos 1:1 garantem que cada instância de
                 entidade
@@ -265,7 +271,7 @@
 
             <h2><strong>Diagrama ER:</strong></h2>
             <br>
-            <p>2A representação gráfica do modelo, onde as entidades são
+            <p class="fontEscritura">2A representação gráfica do modelo, onde as entidades são
                 representadas
                 por retângulos, os atributos por elipses e as relações por losangos.
             </p>
@@ -287,14 +293,14 @@
 
             <h2><strong>Exemplos praticos do DER:</strong></h2> <br>
 
-                <p>
+                <p class="fontEscritura">
 
                     Suponha que estamos modelando um sistema de loja online com as seguintes entidades e
                     relacionamentos:
 
                 </p>
 
-            <p>
+            <p class="fontEscritura">
                 <strong>Cliente:</strong> Entidade com atributos como "ID", "Nome" e "Email".<br>
                 <strong>Pedido:</strong> com atributos como "ID_Pedido", "Data" e "Valor Total".<br>
                 <strong>Produto:</strong> Entidade com atributos como "ID_Produto", "Nome" e "Preço".
@@ -424,7 +430,7 @@
             <p>
                 Um exemplo simples de um diagrama para um sistema de imobiliárias.
             </p> <br>
-            <img src="imagem.jpg" alt="imagem">
+            <img src="imagem-Photoroom.png"imagem">
 
 
         </li>
