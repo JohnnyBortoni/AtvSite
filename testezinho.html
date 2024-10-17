@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progresso com Bola</title>
+    <style>
+        body {
+            height: 2000px; /* Altura grande para ter uma área rolável */
+        }
+
+        /* Barra de progresso no topo */
+        .scroll-progresso {
+            height: 5px;
+            width: 0;
+            background-color: green;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        /* Estilo da bola de progresso */
+        #bolaProgresso {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            border-radius: 50%;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+
+        /* Quando a bola fica azul */
+        .bola-azul {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de progresso -->
+    <div class="scroll-progresso"></div>
+
+    <!-- Bola de progresso -->
+    <div id="bolaProgresso"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
