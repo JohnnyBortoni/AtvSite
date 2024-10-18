@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: color-mix(in srgb, #4A6DE5, #4e75ec 10%); /*rgb(30, 138, 253)) Azul bnt*/
+    background-color: rgb(171, 192, 236);
+    /*rgb(30, 138, 253)) Azul bnt*/
     text-align: center;
 }
 
@@ -14,23 +15,53 @@ body {
     margin-right: 918px;
 }
 
-.mer_napartedecima{
-    padding-top: 13px;
-    font-size: 70px;
+.mer_napartedecima {
+    padding-top: 2%;
+    font-size: 20px;
 }
 
-h1{
+a.btn_cabeca {
+    color: black;
+}
+
+a.btn_cabeca1 {
+    color: black;
+}
+
+a.btn_cabeca2 {
+    color: black;
+}
+
+.btn_cabeca {
+    padding-top: 2%;
+    margin-left: 280px;
+    background-color: rgb(28, 89, 194);
+    margin-right: 20px;
+}
+
+.btn_cabeca1 {
+    padding-top: 2%;
+    background-color: rgb(28, 89, 194);
+    margin-right: 20px;
+}
+
+.btn_cabeca2 {
+    padding-top: 2%;
+    background-color: rgb(28, 89, 194);
+}
+
+h1 {
     text-align: center;
     font-size: 3em;
     font-weight: bolder;
     padding-bottom: 8px;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-h4{
+h4 {
     text-align: left;
     padding-left: 15%;
 }
@@ -41,7 +72,7 @@ img {
     align-self: center;
 }
 
-p{
+p {
     padding-right: 50;
     color: black;
     text-align: left;
@@ -67,12 +98,20 @@ section p {
 .principal_header {
     position: fixed;
     top: 0;
-    display: grid;
-    place-items: left; /* !! */
+    display: flex;
+    justify-content: left;
+    padding-left: 13%;
+    place-items: left;
+    /* !! */
     width: 100%;
     height: 12%;
     background-color: rgb(28, 89, 194);
-    
+
+}
+
+.logo {
+    width: 130px;
+    height: 100px;
 }
 
 
@@ -96,11 +135,6 @@ header h2 {
     padding: 2%;
 }
 
-div.progresso {
-    width: 100%;
-    height: 50%;
-    background-color: rgb(86, 128, 221);
-}
 
 div.scroll-progresso {
     width: 0;
@@ -126,7 +160,7 @@ a {
     text-decoration: none;
 }
 
- a:hover {
+a:hover {
     color: rgb(194, 236, 222);
 }
 
@@ -143,10 +177,14 @@ a {
     color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
     text-align: center;
-    position: fixed; /* Para manter o container fixo na tela */
-    right: 50px; /* Alinha o container à direita da tela */
-    top: 200px; /* Define a distância do topo da tela */
-    z-index: 1000; /* Garante que ele fique sobre outros elementos da página */
+    position: fixed;
+    /* Para manter o container fixo na tela */
+    right: 50px;
+    /* Alinha o container à direita da tela */
+    top: 200px;
+    /* Define a distância do topo da tela */
+    z-index: 1000;
+    /* Garante que ele fique sobre outros elementos da página */
 }
 
 #comp {
@@ -156,7 +194,7 @@ a {
 
 .barra_progre {
     width: 10%;
-    background-color: rgb(31, 12, 136); 
+    background-color: rgb(31, 12, 136);
     position: absolute;
     top: 0;
 }
@@ -180,39 +218,48 @@ a {
 
 /* BARRINHA DE PROGRESSÃO DAQUI PARA BAIXO */
 .steps li:nth-child(1)::after {
-    top: 16px; /* Define o início da linha depois da bolinha */
-    bottom:-22px; /* Quebra antes da segunda bolinha */
+    top: 16px;
+    /* Define o início da linha depois da bolinha */
+    bottom: -22px;
+    /* Quebra antes da segunda bolinha */
 }
 
 /* Para o segundo item */
 .steps li:nth-child(2)::after {
-    top: 16px; 
-    bottom: -22px; /* Fim antes da terceira bolinha */
+    top: 16px;
+    bottom: -22px;
+    /* Fim antes da terceira bolinha */
 }
 
 /* Para o terceiro item */
 .steps li:nth-child(3)::after {
-    top: 16px; 
-    bottom: -22px; /* Fim antes da quarta bolinha */
+    top: 16px;
+    bottom: -22px;
+    /* Fim antes da quarta bolinha */
 }
 
 /* Para o quarto item */
 .steps li:nth-child(4)::after {
-    top: 16px; 
-    bottom: -22px; /* Fim antes da quinta bolinha */
+    top: 16px;
+    bottom: -22px;
+    /* Fim antes da quinta bolinha */
 }
 
 /* Para o quinto item, sem linha após a última bolinha */
 .steps li:nth-child(5)::after {
-    top: 16px; 
-    bottom: -22px; /* Fim logo abaixo da bolinha */
+    top: 16px;
+    bottom: -22px;
+    /* Fim logo abaixo da bolinha */
 
 }
+
 .steps li:nth-child(6)::after {
-    top: 16px; 
-    bottom: -22px; /* Fim logo abaixo da bolinha */
+    top: 16px;
+    bottom: -22px;
+    /* Fim logo abaixo da bolinha */
 
 }
+
 /* FIM DA BARRINHA DE PROGRESSÃO */
 
 #mer {
@@ -222,4 +269,3 @@ a {
     align-items: center;
     padding: 16px;
 }
-
