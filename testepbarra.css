@@ -11,11 +11,13 @@ body {
 }
 
 .subb {
-    margin-right: 918px;
+    display: flex ;
+    justify-content: center;
 }
 
 .mer_napartedecima{
     padding-top: 13px;
+    font-family: "Merriweather" serif;
     font-size: 70px;
 }
 
@@ -134,6 +136,9 @@ a {
     font-family: Garamond;
 }
 
+#hdGado {
+    width: 800px;
+}
 
 .container {
     background-color: #0d367c;
@@ -144,7 +149,7 @@ a {
     font-family: Arial, sans-serif;
     text-align: center;
     position: fixed; /* Para manter o container fixo na tela */
-    right: 50px; /* Alinha o container à direita da tela */
+    right: 25px; /* Alinha o container à direita da tela */
     top: 200px; /* Define a distância do topo da tela */
     z-index: 1000; /* Garante que ele fique sobre outros elementos da página */
 }
@@ -156,7 +161,7 @@ a {
 
 .barra_progre {
     width: 10%;
-    background-color: rgb(31, 12, 136); 
+    background-color: green; 
     position: absolute;
     top: 0;
 }
