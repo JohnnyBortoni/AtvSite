@@ -1,11 +1,123 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar</title>
+<title>Login</title>
+<meta charset="utf-8">
+
+<style>
+ 
+ body
+{
+	background:#051933;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+div
+{
+	background:#082549;
+	width:420px;
+    height: 500px;
+	margin: 0 auto;
+	border-radius:15px;
+    border: 1px solid rgb(0, 102, 255);
+	padding:20px;
+	margin-top:100px;
+}
+
+#titulo {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 8px;
+}
+
+#subtexto {
+    margin-top: 5px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#loguin{
+    margin-bottom: 0px;
+    margin-left: 15px;
+    color: aliceblue;
+}
+
+#inLoguin {
+    background-color: #051933;
+    margin-top: 3px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 0px solid #051933;
+    width: 385px;
+    height: 35px;
+}
+
+#senha {
+    margin-top: 13px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    color: aliceblue;
+}
+
+#inSenha {
+    background-color: #051933;
+    margin-top: 3px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: 0px solid #051933;
+    width: 385px;
+    height: 35px;
+}
+
+#btnentrar {
+    background-color: #A3FFBF;
+    color: black;
+    font-weight: bold;
+    width: 385px;
+    height: 55px;
+    margin-top: 35px;
+    margin-left: 15px;
+    border-radius: 55px;
+}
+
+#btngoogle {
+    width: 385px;
+    height: 55px;
+    margin-top: 13px;
+    margin-bottom: 55px;
+    margin-left: 15px;
+    border-radius: 55px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    color: aliceblue;
+
+}
+
+
+.botoes:hover
+{
+	background-image:linear-gradient(rgba(235,99,80, 0.9),rgba(240, 225,126, 0.9));
+}
+
+</style>
+
 </head>
 <body>
-    
+<div>
+    <h1 id="titulo">Já Estuda com a agente?</h1> 
+    <p id="subtexto">Faça seu login e boa aula!</p>
+
+    <p id="loguin">E-mail</p> <input type="text" name="loguin" id="inLoguin">
+
+    <p id="Senha">Senha</p> <input type="password" name="senha" id="inSenha"> <br>
+    <input type="submit" id="btnentrar" class="botoes" value="Entrar"><br>
+    <input type="button" id="btngoogle" class="botoes" value="Entrar com Google">
+    <a href="#">Primeiro Acesso</a> <br>
+    <a href="#">Esqueci minha Senha</a>
+</div>
 </body>
 </html>
