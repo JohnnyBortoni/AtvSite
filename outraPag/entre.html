@@ -2,6 +2,9 @@
 <head>
 <title>Login</title>
 <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 <style>
  
@@ -28,18 +31,27 @@ div
     text-align: center;
     color: aliceblue;
     margin-bottom: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 #subtexto {
     margin-top: 5px;
     text-align: center;
     color: aliceblue;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 #loguin{
     margin-bottom: 0px;
     margin-left: 15px;
     color: aliceblue;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 #inLoguin {
@@ -57,6 +69,9 @@ div
     margin-bottom: 0px;
     margin-left: 15px;
     color: aliceblue;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 #inSenha {
@@ -72,7 +87,9 @@ div
 #btnentrar {
     background-color: #A3FFBF;
     color: black;
-    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     width: 385px;
     height: 55px;
     margin-top: 35px;
@@ -81,26 +98,30 @@ div
 }
 
 #btngoogle {
+    background-color: #082549;
+    color: aliceblue;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     width: 385px;
     height: 55px;
     margin-top: 13px;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     margin-left: 15px;
     border-radius: 55px;
+    border: 1px solid red;
 }
 
 a {
     display: flex;
     justify-content: center;
-     align-items: center;
+    align-items: center;
+    text-decoration: none;
     color: aliceblue;
-
 }
 
-
-.botoes:hover
-{
-	background-image:linear-gradient(rgba(235,99,80, 0.9),rgba(240, 225,126, 0.9));
+a:hover {
+    color:rgb(25, 70, 138);
 }
 
 </style>
@@ -115,7 +136,7 @@ a {
 
     <p id="Senha">Senha</p> <input type="password" name="senha" id="inSenha"> <br>
     <input type="submit" id="btnentrar" class="botoes" value="Entrar"><br>
-    <input type="button" id="btngoogle" class="botoes" value="Entrar com Google">
+    <input type="button" id="btngoogle" class="botoes" value="ENTRAR COM O GOOGLE">
     <a href="#">Primeiro Acesso</a> <br>
     <a href="#">Esqueci minha Senha</a>
 </div>

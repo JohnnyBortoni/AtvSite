@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(171, 192, 236);
+    background-color: #092549;
     /*rgb(30, 138, 253)) Azul bnt*/
     text-align: center;
 }
@@ -19,30 +19,35 @@ body {
 
 
 .mer_napartedecima {
+    margin-top: 15px;
+    margin-right: 50px;
+    color: #D7F9FF;
     font-family: "Raleway", sans-serif;
-    font-size: 20px;
+    font-weight: 100;
     padding-top: 2%;
 }
 
 a.btn_cabeca {
-    color: black;
+    margin-top: 15px;
+    color: #D7F9FF;
     margin-left: 600px;
     font-family: "Raleway", sans-serif;
 }
 
 a.btn_cabeca1 {
-    color: black;
+    margin-top: 15px;
+    color: #D7F9FF;
     font-family: "Raleway", sans-serif;
 }
 
 a.btn_cabeca2 {
-    color: black;
+    margin-top: 15px;
+    color: #D7F9FF;
     font-family: "Raleway", sans-serif;
 }
 
 .btn_cabeca {
     padding-top: 2%;
-    margin-left: 280px;
     background-color: rgb(28, 89, 194, );
     opacity: 0.7;
     margin-right: 20px;
@@ -92,12 +97,30 @@ img {
 }
 
 .fontEscritura{
-    padding-right: 50;
-    color: black;
+    padding-right: 50; /*#D7F9FF: titulo*/
+    color: rgb(192, 216, 236); /*#93CED7: explicacao */
     text-align: left;
     padding-right: 15%;
     padding-left: 15%;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 
+.link_vert {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D7F9FF;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.semstrog {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: rgb(136, 208, 236);
+    
 }
 
 section {
@@ -120,13 +143,12 @@ section p {
     top: 0;
     display: flex;
     justify-content: left;
-    padding-left: 13%;
+    padding-left: 13%; 
     place-items: left;
-    /* !! */
     width: 100%;
     height: 12%;
-    background-color: rgb(28, 89, 194, 0.9);
-    font-family: "Raleway", sans-serif;
+    background-color:#041327;
+    font-family: "Inter", sans-serif;
 }
 
 .logo {
@@ -163,17 +185,6 @@ div.scroll-progresso {
 }
 
 
-#link_vert {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-#prinComM {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
 a {
     text-align: center;
     color: rgb(58, 135, 216);
@@ -182,10 +193,6 @@ a {
 
 a:hover {
     color: rgb(194, 236, 222);
-}
-
-.fontEscritura {
-    font-family: Garamond;
 }
 
 #hdGado {
@@ -214,6 +221,9 @@ a:hover {
 }
 
 .ferramenta{
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: rgb(136, 208, 236);
     text-align: left;
     padding-left: 15%;
 }
