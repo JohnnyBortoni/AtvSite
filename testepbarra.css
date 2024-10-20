@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Arial";
 }
 
 body {
@@ -85,6 +84,11 @@ h2 {
     padding-left: 15%;
 }
 
+h3{
+    text-align: left;
+    padding-left: 15%;
+}
+
 h4 {
     text-align: left;
     padding-left: 15%;
@@ -98,7 +102,7 @@ img {
 
 .fontEscritura{
     padding-right: 50; /*#D7F9FF: titulo*/
-    color: rgb(192, 216, 236); /*#93CED7: explicacao */
+    color: #c0d8ec; /*#93CED7: explicacao */
     text-align: left;
     padding-right: 15%;
     padding-left: 15%;
@@ -117,6 +121,28 @@ img {
 }
 
 .semstrog {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: rgb(136, 208, 236);
+    
+}
+
+.maistrong {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: rgb(136, 208, 236);
+}
+
+.cardi {
+    padding-left: 0%;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: rgb(136, 208, 236);
+}
+
+.miniEle {
+    text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 200;
     color: rgb(136, 208, 236);
@@ -187,7 +213,7 @@ div.scroll-progresso {
 
 a {
     text-align: center;
-    color: rgb(58, 135, 216);
+    color:  rgb(136, 208, 236);
     text-decoration: none;
 }
 
@@ -199,19 +225,25 @@ a:hover {
     width: 800px;
 }
 
+#arruma {
+    text-align: center;
+}
+
 .container {
-    background-color: #0d367c;
+    background-color: #0e305e;
     border-radius: 10px;
     padding: 10px;
     width: 197px;
-    color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #D7F9FF;
     text-align: center;
     position: fixed;
     top: 200px;
     z-index: 1000;
     position: fixed;
-    right: 50px;
+    right: 15px;
     top: 200px;
     z-index: 1000;
 }
@@ -231,17 +263,10 @@ a:hover {
 .barra_progre {
     width: 10%;
 
-    background-color: green;
-
-    background-color: rgb(255, 255, 255);
+    background-color:#D7F9FF;
 
     position: absolute;
     top: 0;
-}
-
-ul{
-    text-align: left;
-    padding-left: 16%;
 }
 
 .conteudo {

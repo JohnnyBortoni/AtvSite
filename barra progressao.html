@@ -46,14 +46,14 @@
 
 
         <div class="container">
-            <h3 class="mer_container"> MER </h3>
+            <h3 class="mer_container" id="arruma"> MER </h3>
 
 
 
             <ul class="steps">
                 <div class="barra_progre" id="barra_progre"></div>
 
-                <li><a href="#oqMer">Módulo 0</a></li>
+                <li><a href="#oqMer">Introdução</a></li>
 
                 <li><a href="#qspComp">Módulo 1</a></li>
 
@@ -70,11 +70,10 @@
 
     </section>
 
-    <nav>
 
         <h1><a name="oqMer" class="link_vert">O QUE É MER?</a></h1>
-
-    </nav>
+        
+        <br>
 
 
     <p class="fontEscritura">
@@ -88,7 +87,8 @@
         que podem só fazer sentido no contexto de bases de dados relacionais.
     </p>
 
-    <br>
+    <br><br>
+
         <h3 class="semstrog"> Conceito e Origem do MER:</h3> <br>
 
     <p class="fontEscritura"> MER foi criado em 1976 por Peter Chen, com o objetivo de representar de maneira simples e
@@ -112,13 +112,13 @@
 
     <br><br>
 
-    <hr class="hrp" />
+    <hr class="hrp">  
 
     <br><br>
 
     <h1><a name="qspComp" class="link_vert">PRINCIPAIS COMPONENTES DO MER</a></h1> <br>
 
-    <ul class="semstrog">
+    <ul class="miniEle">
             <li> Entidades </li>
             <li> Atributos </li>
             <li> Relações </li>
@@ -127,39 +127,31 @@
     </ul>
 
 
-    </p>
-
     <main>
 
         <article>
 
             <br><br>
 
-            <h2 class="semstrog">Entidades:</h2>
+            <h2 class="semstrog">Entidades</h2>
 
             <br>
 
-            <p class="fontEscritura">Representam objetos ou conceitos do mundo real que têm uma
-                existência
-                independente. Cada entidade possui atributos, que são características ou propriedades (por
-                exemplo,
-                um "Cliente" pode ter atributos como Nome, Endereço e Telefone).
+            <p class="fontEscritura">Entidades são os principais objetos ou elementos que representam algo do mundo real que queremos armazenar informações. Elas podem ser pessoas, coisas, lugares ou eventos sobre os quais o banco de dados vai guardar dados. Cada entidade tem um conjunto de atributos que descrevem suas características.
             </p>
 
             <br><br>
 
-            <h2 class="semstrog">Tipos de Entidades:</h2>
+            <h2 class="semstrog">Tipos de Entidades</h2>
 
             <br>
 
             <p class="fontEscritura">
 
-                <strong> Fortes (ou Entidades Independentes):</strong> São entidades que existem
-                independentemente
-                de outras
+                <span class="semstrog">Entidades Fortes (ou Entidades Independentes):</span> São aquelas que têm uma existência própria no banco de dados, ou seja, não dependem de nenhuma outra entidade para serem identificadas. Elas possuem uma chave primária que as identifica de forma única.
                 entidades. Por exemplo, um "Cliente" existe independentemente de outras entidades.<br>
 
-                <strong>Entidades Fracas (ou Entidades Dependentes):</strong> São entidades que dependem de
+                <span class="semstrog">Entidades Fracas (ou Entidades Dependentes):</span> São entidades que dependem de
                 outra
                 entidade para
                 existir. Elas geralmente não têm uma chave primária própria e precisam de uma entidade forte
@@ -174,39 +166,35 @@
 
         </article>
 
-        <br><br>
+        <br>
 
         <article>
 
 
-            <h2 class="semstrog">Atributos:</h2>
+            <h2 class="semstrog">Atributos</h2>
 
             <br>
 
             <p class="fontEscritura">
-                São as propriedades que descrevem uma entidade. Podem ser
-                simples
-                (um
-                único valor), compostos (vários valores) ou deriváveis (calculados a partir de outros
-                atributos).
+                Atributos são as características ou propriedades que descrevem as entidades. Uma entidade pode ser algo como "Pessoa" ou "Carro", e os atributos fornecem mais detalhes sobre essas entidades. Por exemplo, uma entidade "Pessoa" pode ter atributos como "nome", "idade" e "endereço". Já uma entidade "Carro" poderia ter atributos como "marca", "modelo" e "ano".
             </p>
 
             <br><br>
 
-            <h2 class="semstrog">Tipos de Atributos:</h2>
+            <h2 class="semstrog">Tipos de Atributos</h2>
 
             <br>
 
             <p class="fontEscritura">
 
-                <strong> Atributos Simples:</strong> São atributos que não podem ser divididos em
+                <span class="maistrong"> Atributos Simples:</span> São atributos que não podem ser divididos em
                 subcomponentes.
                 Exemplo: "Nome" de
                 um cliente.<br>
-                <strong>Atributos Compostos:</strong> Podem ser subdivididos em componentes menores. Exemplo:
+                <span class="maistrong">Atributos Compostos:</span> Podem ser subdivididos em componentes menores. Exemplo:
                 "Endereço", que pode
                 ser dividido em "Rua", "Cidade", "Estado" e "CEP".<br>
-                <strong> Atributos Derivados:</strong> São atributos cujo valor pode ser calculado a partir de
+                <span class="maistrong"> Atributos Derivados:</span> São atributos cujo valor pode ser calculado a partir de
                 outros atributos.
                 Exemplo: "Idade", que pode ser derivada da "Data de Nascimento".
                 Atributos Multivalorados: Podem ter mais de um valor para uma única instância da entidade.
@@ -218,14 +206,14 @@
 
         </article>
 
-        <br><br>
+        <br>
 
         <article>
 
 
-            <h2 class="semstrog">Relações:</h2>
+            <h2 class="semstrog">Relações</h2>
 
-            <br><br>
+            <br>
 
             <p class="fontEscritura"> Representam como as entidades se conectam umas às outras. Por
                 exemplo, um
@@ -242,7 +230,7 @@
         <article>
 
 
-            <h2 class="semstrog">Cardinalidade:</h2>
+            <h2 class="semstrog">Cardinalidade</h2>
 
             <br>
 
@@ -251,34 +239,34 @@
                 As
                 cardinalidades comuns incluem:
             </p>
-            <br> <br>
+            <br>
 
-            <h2 class="semstrog">Um Para Um(1:1)</h2>
-            <h2 class="semstrog">Um Para Muitos(1:N)</h2>
-            <h2 class="semstrog">Muitos Para Muitos (N:N)</h2>
+            <h2 class="cardi">Um Para Um (1:1)</h2>
+            <h2 class="cardi">Um Para Muitos (1:N)</h2>
+            <h2 class="cardi">Muitos Para Muitos (N:N)</h2>
 
-            <br><br><br>
+            <br><br>
 
             </p>
 
-            <p class="fontEscritura">
+            <div class="fontEscritura">
 
-                <strong>Um-para-Um (1:1):</strong> Os relacionamentos 1:1 garantem que cada instância de
+                <span class="maistrong">Um-para-Um (1:1):</span> Os relacionamentos 1:1 garantem que cada instância de
                 entidade
                 tenha no máximo uma associação correspondente.
 
                 <br><br>
 
-                <strong>Um-para-Muitos (1:N):</strong> Um relacionamento 1:N significa que cada instância de uma
+                <span class="maistrong">Um-para-Muitos (1:N):</span> Um relacionamento 1:N significa que cada instância de uma
                 entidade se relaciona com muitas instâncias de outra entidade.
 
                 <br><br>
 
-                <strong>Muitos-para-Muitos (N:N):</strong> Um relacionamento N:N significa que muitas instâncias
+                <span class="maistrong">Muitos-para-Muitos (N:N):</span> Um relacionamento N:N significa que muitas instâncias
                 de
                 ambas as entidades se relacionam umas com as outras.
 
-            </p>
+            </div>
 
         </article>
 
@@ -287,29 +275,28 @@
         <article>
 
 
-            <h2 class="semstrog">Diagrama ER:</h2>
+            <h2 class="semstrog">Diagrama ER</h2>
             <br>
-            <p class="fontEscritura">2A representação gráfica do modelo, onde as entidades são
-                representadas
-                por retângulos, os atributos por elipses e as relações por losangos.
+            <p class="fontEscritura">É uma representação gráfica que mostra como os dados estão organizados em um sistema de banco de dados. Ele é usado para visualizar a estrutura de um banco de dados de forma mais clara, mostrando as entidades, seus atributos e os relacionamentos entre elas. É uma ferramenta essencial no design de bancos de dados.
             </p>
 
             <br><br>
 
-            <h2 class="semstrog">Componentes Visuais do DER:</h2>
+            <h2 class="semstrog">Componentes Visuais do DER</h2>
+            <br>
             <p class="fontEscritura">
-                <strong> Retângulos:</strong> Representam as entidades.<br>
-                <strong> Elipses:</strong> Representam os atributos.<br>
-                <strong>Losangos:</strong> Representam os relacionamentos.<br>
-                <strong> Linhas:</strong> Conectam entidades a seus atributos e a relacionamentos.<br>
-                <strong> Cardinalidade:</strong> Representada por números ou símbolos próximos às linhas que
+                <span class="maistrong"> Retângulos:</span> Representam as entidades.<br>
+                <span class="maistrong"> Elipses:</span> Representam os atributos.<br>
+                <span class="maistrong">Losangos:</span> Representam os relacionamentos.<br>
+                <span class="maistrong"> Linhas:</span> Conectam entidades a seus atributos e a relacionamentos.<br>
+                <span class="maistrong"> Cardinalidade:</span> Representada por números ou símbolos próximos às linhas que
                 conectam entidades e
                 relacionamentos, indicando as regras de cardinalidade.
             </p>
 
-            <br>
+            <br><br>
 
-            <h2 class="semstrog">Exemplos praticos do DER:</h2> <br>
+            <h2 class="semstrog">Exemplos praticos do DER</h2> <br>
 
             <p class="fontEscritura">
 
@@ -317,21 +304,25 @@
                 relacionamentos:
 
             </p>
+            
+            <br>
 
             <p class="fontEscritura">
-                <strong>Cliente:</strong> Entidade com atributos como "ID", "Nome" e "Email".<br>
-                <strong>Pedido:</strong> com atributos como "ID_Pedido", "Data" e "Valor Total".<br>
-                <strong>Produto:</strong> Entidade com atributos como "ID_Produto", "Nome" e "Preço".
-                Relacionamentos:<br><br>
+                <span class="maistrong">Cliente:</span> Entidade com atributos como "ID", "Nome" e "Email".<br>
+                <span class="maistrong">Pedido:</span>  Entidade com atributos como "ID_Pedido", "Data" e "Valor Total".<br>
+                <span class="maistrong">Produto:</span> Entidade com atributos como "ID_Produto", "Nome" e "Preço".
+                <br><br>
 
-                Um cliente pode fazer vários pedidos (1).<br>
-                Um pedido contém vários produtos (N).<br>
-                No diagrama, teríamos um retângulo para cada entidade, elipses para os atributos, losangos
-                para
-                os
-                relacionamentos "Faz" e "Contém", e linhas conectando esses elementos, com a cardinalidade
-                expressa
-                junto às conexões.
+                <p class="maistrong">Um cliente pode fazer vários pedidos (1).</p> 
+                <p class="maistrong">Um pedido contém vários produtos (N).</p><br>
+                <p class="fontEscritura">
+                    No diagrama, teríamos um retângulo para cada entidade, elipses para os atributos, losangos
+                    para
+                    os
+                    relacionamentos "Faz" e "Contém", e linhas conectando esses elementos, com a cardinalidade
+                    expressa
+                    junto às conexões.
+                </p>
             </p>
 
         </article>
@@ -346,7 +337,7 @@
 
     <br><br>
 
-    <hr class="hrp" />
+    <hr class="hrp">
 
     <br><br>
 
@@ -354,23 +345,28 @@
 
     <br>
 
-
     <h3 class="ferramenta">
-        Desenvolvimento de bancos de dados:
-    </h3>
+        Desenvolvimento de bancos de dados
+    </h3> 
+
+    <br>
 
     <p class="fontEscritura"> A partir do MER, é possível projetar a estrutura do banco de dados, definindo as
         tabelas, os campos
         e as
-        chaves primárias e estrangeiras.</p><br>
+        chaves primárias e estrangeiras.</p>
+        
+        <br><br>
 
     <h3 class="ferramenta">
-        Chaves Primárias e Estrangeiras:
+        Chaves Primárias e Estrangeiras
     </h3>
+
     <br>
+
     <p class="fontEscritura">
 
-        <strong>Chave Primária:</strong> Um atributo (ou conjunto de atributos) que identifica univocamente
+        <span class="maistrong">Chave Primária</span> Um atributo (ou conjunto de atributos) que identifica univocamente
         uma
         instância de uma
         entidade. Por exemplo, "ID_Cliente" é a chave primária da entidade "Cliente".
@@ -378,7 +374,7 @@
     </p>
     <p class="fontEscritura">
 
-        <strong> Chave Estrangeira:</strong> Um atributo em uma entidade que faz referência à chave
+        <span class="maistrong"> Chave Estrangeira</span> Um atributo em uma entidade que faz referência à chave
         primária de outra entidade,
         estabelecendo um relacionamento entre as duas. Exemplo: "ID_Cliente" na entidade "Pedido"
         seria
@@ -387,56 +383,75 @@
 
     </p>
 
-    <br>
+    <br><br>
 
     <h3 class="ferramenta">
-            Documentação:
+            Documentação
     </h3>
+
+    <br>
 
     <p class="fontEscritura">
         O MER serve como uma documentação visual do banco de dados, facilitando a manutenção e as futuras
         alterações
-    </p> <br>
+    </p> 
+    
+    <br><br>
 
     <h3 class="ferramenta">
-        Representação visual:
+        Representação visual
     </h3>
+
+    <br>
 
     <p class="fontEscritura"> O MER utiliza diagramas para representar as entidades (pessoas, objetos,
         conceitos) e os
         relacionamentos entre elas. Essa representação gráfica facilita a compreensão da estrutura dos dados
         e a comunicação entre os membros da equipe.
-    </p> <br>
+    </p> 
+    
+    <br><br>
 
     <h3 class="ferramenta">
-        Análise de requisitos:
+        Análise de requisitos
     </h3>
+
+    <br>
 
     <p class="fontEscritura">
         O MER auxilia na análise e definição dos requisitos de um sistema, permitindo identificar as
         informações
         relevantes e as relações entre elas.
-    </p> <br>
+    </p> 
+    
+    <br><br>
 
     <h3 class="ferramenta">
-        Comunicação:
+        Comunicação
     </h3>
+
+    <br>
 
     <p class="fontEscritura">
         O MER é uma linguagem comum que permite comunicar a estrutura dos dados de forma clara e concisa
         entre
         os diversos envolvidos no projeto, como analistas de sistemas, desenvolvedores e usuários finais.
-    </p> <br>
+    </p> 
+    
+    <br><br>
 
     <h3 class="ferramenta">
-        Exemplo:
+        Exemplo
     </h3>
+
+    <br>
 
     <p class="fontEscritura">
         Um exemplo simples de um diagrama para um sistema de imobiliárias.
-    </p> <br>
-    <img id="hdGado" src="imagem-Photoroom.png" imagem">
-
+    </p> <br> <br>
+    <img id="hdGado" src="Proprietário.png">
+    
+    <br>
 
 
 
@@ -454,7 +469,7 @@
 
     <h1> <a name="fupMER" class="link_vert">FERRAMENTAS UTILIZADAS PELO MER</a></h1>
 
-    <br>
+    <br><br>
 
     <nav>
 
@@ -465,79 +480,102 @@
         <h3 class="ferramenta">
             Lucidhart
         </h3>
+
+        <br>
+
         <p class="fontEscritura">
             Uma ferramenta online que permite criar diagramas ER de forma colaborativa.
         </p>
 
-        <br>
+        <br><br>
 
         <h3 class="ferramenta">
             Draw.io
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Uma ferramenta gratuita e versátil para desenhar diagramas, incluindo modelos ER.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <h3 class="ferramenta">
             Mysql Workbench
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Oferece recursos para modelagem de dados incluindo a criação de diagramas ER que podem ser
             usados
             para gerar código SQL.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <h3 class="ferramenta">
             Microsoft Visio
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Uma ferramenta poderosa de diagramação que possui tmeplates para diagramas ER.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <h3 class="ferramenta">
             ER/Studio
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Um software especializado em modelagem de dados, muito em ambientes corporativos.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <h3 class="ferramenta">
             Oracle SQL Developer Data Modeler
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Ferramenta da Oracle que permite modelagem visual e criação de diagramas ER.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <h3 class="ferramenta">
             DbSchema
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Uma ferramenta para design de bancos de dados que inclui suporte para modelos ER e visualização
             de
             dados.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <h3 class="ferramenta">
             Toad Data Modeler
         </h3>
 
+        <br>
+
         <p class="fontEscritura">
             Usada para modelagem de dados e criação de diagramas ER, com suporte para várias plataformas de
             banco de dados.
-        </p> <br>
-
-        <p class="fontEscritura">
-            Essas ferramentas variam em termos de recursos, facilidade de uso e integração com banco de
-            dados,
-            então a escolha depende das necessidades específicas do projeto.
-        </p>
-
+        </p> 
+        
 
     </nav>
 
@@ -561,17 +599,21 @@
             "Médico" e
             "Paciente", com alguns de seus possíveis atributos, bem como o relacionamento
             "Atendimento" entre elas.
-        </p> <br>
+        </p> 
+        
+        <br><br>
 
         <img src="Captura de tela 2024-09-26 223318.png">
 
-        <br><br>
+        <br><br><br>
 
         <h3 class="semstrog">
             <p>
                 O que podemos enterder do diagrama entidade relacionamento da imagem acima?
             </p>
         </h3>
+
+        <br>
 
         <p class="fontEscritura"> Bom, ele está ilustrando o atendimento de pacientes por médicos, sendo que
             o
@@ -600,18 +642,12 @@
 
     <nav>
 
-        <p class="fontEscritura"> O Modelo Entidade-Relacionamento (MER) é uma técnica fundamental na
-            modelagem de dados. aqui estão
-            os principais benefícios e malefícios:
-        </p>
 
-        <br><br><br>
-
-        <h2 class="semstrog"> Benefícios: </h2>
+        <h2 class="semstrog"> Benefícios </h2>
 
         <br>
 
-        <h4> 1. Clareza visual: </h4>
+        <h3 class="semstrog">Clareza visual </h3>
 
         <br>
 
@@ -620,12 +656,12 @@
             tornando a estrutura de
             dados fácil de entender. Isso é crucial para a equipe de desenvolvimento e
             outras partes
-            interessadas.:
+            interessadas.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 2. Comunicação erficaz: </h4>
+        <h3 class="semstrog">Comunicação erficaz</h3>
 
         <br>
 
@@ -636,9 +672,9 @@
             interagem.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 3. Estrutura lógica: </h4>
+        <h3 class="semstrog">Estrutura lógica</h3>
 
         <br>
 
@@ -648,9 +684,9 @@
             da estrutura do banco de dados e de como os dados se relacionam entre si.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 4. Facilidade de alteração: </h4>
+        <h3 class="semstrog">Facilidade de alteração</h3>
 
         <br>
 
@@ -660,9 +696,9 @@
             mudanças. Isso é essencial em ambientes de desenvolvimento ágeis.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 5. Base para normalização: </h4>
+        <h3 class="semstrog">Base para normalização</h3>
 
         <br>
 
@@ -672,9 +708,9 @@
             de normalização que melhoram a integridade e eficiência do banco de dados.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 6. Documentação: </h4>
+        <h3 class="semstrog">Documentação</h3>
 
         <br>
 
@@ -686,9 +722,9 @@
             tempo.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 7. Análise de requisitos: </h4>
+        <h3 class="semstrog">Análise de requisitos</h3>
 
         <br>
 
@@ -699,13 +735,13 @@
             subsequente.
         </p>
 
-        <br><br><br>
+        <br><br>
 
-        <h2 class="semstrog"> Malefícios: </h2>
+        <h2 class="semstrog"> Malefícios</h2>
 
         <br>
-        :
-        <h4> 1. Complexidade em grandes sistemas:</h4>
+        
+        <h3 class="semstrog">Complexidade em grandes sistemas</h3>
 
         <br>
 
@@ -715,9 +751,9 @@
             dificultando a visualização e compreensão do modelo.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 2. Desempenho: </h4>
+        <h3 class="semstrog">Desempenho</h3>
 
         <br>
 
@@ -728,9 +764,9 @@
             otimizações adicionais.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 3. Ambiguidade: </h4>
+        <h3 class="semstrog">Ambiguidade</h3>
 
         <br>
 
@@ -741,9 +777,9 @@
             equipe.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 4. Dificuldade de implementação: </h4>
+        <h3 class="semstrog">Dificuldade de implementação</h3>
 
         <br>
 
@@ -754,9 +790,9 @@
             específicas.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 5. Manutenção: </h4>
+        <h3 class="semstrog">Manutenção</h3>
 
         <br>
 
@@ -768,9 +804,9 @@
             introduzir erros.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 6. Falta de padrões: </h4>
+        <h3 class="semstrog">Falta de padrões</h3>
 
         <br>
 
@@ -781,9 +817,9 @@
             entre sistemas.
         </p>
 
-        <br>
+        <br><br>
 
-        <h4> 7. Dependência de ferramentas: </h4>
+        <h3 class="semstrog">Dependência de ferramentas</h3>
 
         <br>
 
@@ -802,8 +838,6 @@
 
 
     <!-- Fim do módulo 5 -->
-
-    </section>
 
     <script src="testepbarra.js">
 
