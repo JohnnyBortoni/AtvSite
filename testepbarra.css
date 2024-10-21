@@ -96,7 +96,7 @@ h4 {
 
 img {
     height: 500px;
-    width: 500px;
+    width: 800px;
     align-self: center;
 }
 
@@ -219,10 +219,6 @@ a {
 
 a:hover {
     color: rgb(194, 236, 222);
-}
-
-#hdGado {
-    width: 800px;
 }
 
 #arruma {
